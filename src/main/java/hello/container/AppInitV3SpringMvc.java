@@ -14,6 +14,7 @@ public class AppInitV3SpringMvc implements WebApplicationInitializer {
     public void onStartup(ServletContext servletContext) throws ServletException {
         System.out.println("AppInitV3SpringMvc.onStartup");
 
+
         //스프링 컨테이너 생성
         AnnotationConfigWebApplicationContext appContext = new AnnotationConfigWebApplicationContext();
         appContext.register(HelloConfig.class);
